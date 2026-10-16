@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <!--Responsividade-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Rotina Universitária — Pesquisa de campo sobre hábitos, saúde e vida acadêmica</title>
+  <meta name="description" content="Reportagem especial com pesquisa de campo sobre a rotina, a alimentação, a atividade física, a saúde mental e a vida social de universitários. Projeto de extensão da Unipar.">
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ícones-->
+  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20l1.2-5A8.4 8.4 0 1 1 21 11.5z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></symbol>
+    <symbol id="i-email" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+  </svg>
+
+  <!--FAIXA SUPERIOR PRETA-->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span>Edição especial · Projeto de extensão</span>
+      <span>Unipar · Outubro de 2026</span>
+    </div>
+  </div>
+
+
+  <!--cabeçalho de jornal -->
+  <header class="masthead">
+    <div class="container">
+      <div class="rule-double" aria-hidden="true"></div>
+      <p class="masthead__title">A Rotina Universitária</p>
+      <p class="masthead__tagline">Pesquisa de campo sobre hábitos, saúde e vida acadêmica</p>
+
+      <nav class="nav" aria-label="Seções da página">
+        <ul class="nav__list">
+          <li><a href="#pesquisa">Pesquisa</a></li>
+          <li><a href="#especialistas">Especialistas</a></li>
+          <li><a href="#panorama">Panorama</a></li>
+          <li><a href="#recomendacoes">Recomendações</a></li>
+          <li><a href="#participe">Participe</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!--MANCHETE -->
+    <section class="lead" id="pesquisa" aria-labelledby="manchete">
+      <div class="container lead__grid">
+
+        <article class="lead__main">
+          <p class="kicker">Reportagem especial</p>
+          <h1 class="lead__title" id="manchete">Entre aulas, trabalho e prazos, como vive o universitário?</h1>
+          <p class="lead__deck">Uma pesquisa de campo ouviu universitários e ex-universitários sobre alimentação, atividade física, saúde mental e vida social — e submeteu os resultados à análise de especialistas.</p>
+          <p class="byline">Por equipe do projeto de extensão · Engenharia de Software, Unipar</p>
+
+          <!-- O texto em duas colunas-->
+          <div class="lead__body">
+            <p>Estudar, trabalhar e manter a vida pessoal em dia faz parte do cotidiano de muitos acadêmicos. Essa rotina intensa costuma favorecer hábitos práticos, mas nem sempre saudáveis ou recomendáveis: refeições irregulares, pouco sono, sedentarismo e sobrecarga mental.</p>
+            <p>Por isso, um grupo de estudantes desenvolveu este projeto acadêmico: uma pesquisa de campo aplicada a universitários e ex-universitários, para compreender como estão a rotina e os hábitos da vida acadêmica.</p>
+            <p>Os resultados são analisados por profissionais de cada área e confrontados com pesquisas recentes, nacionais e internacionais, compondo um panorama do cenário universitário.</p>
+            <blockquote class="pull">“Rotina intensa, hábitos práticos — mas nem sempre saudáveis.”</blockquote>
+          </div>
+        </article>
+
+        <aside class="lead__side" aria-label="Participe da pesquisa">
+          <div class="participe" id="participe">
+            <p class="kicker">Participe</p>
+            <h2 class="participe__title">Responda ao questionário</h2>
+            
+            <p class="participe__text">Leva poucos minutos. As respostas são anônimas e alimentam esta reportagem. Para universitários e ex-universitários.</p>
+            <!--Google Forms -->
+            <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfPuXnnag1WBMnQj27vCgwtDP3L5r70aJl-CUI6578sW5Eajw/viewform?usp=sharing&ouid=101812409546628150353" target="_blank" rel="noopener">Acessar o formulário →</a>
+          </div>
+
+        </aside>
+
+      </div>
+    </section>
+
+    <!--NESTA REPORTAGEM (os 4 eixos) -->
+    <section class="band band--alt" aria-labelledby="eixos-titulo">
+      <div class="container">
+        <h2 class="section-label" id="eixos-titulo">Nesta reportagem</h2>
+        <ol class="eixos">
+          <li>
+            <span class="eixos__num" aria-hidden="true">01</span>
+            <h3>Alimentação</h3>
+            <p>Frequência das refeições, qualidade da dieta e acompanhamento nutricional.</p>
+          </li>
+          <li>
+            <span class="eixos__num" aria-hidden="true">02</span>
+            <h3>Saúde física</h3>
+            <p>Atividade física, horas de sono e acompanhamento médico.</p>
+          </li>
+          <li>
+            <span class="eixos__num" aria-hidden="true">03</span>
+            <h3>Saúde mental</h3>
+            <p>Sobrecarga, estresse e o impacto da rotina no bem-estar emocional.</p>
+          </li>
+          <li>
+            <span class="eixos__num" aria-hidden="true">04</span>
+            <h3>Vida social</h3>
+            <p>Equilíbrio entre trabalho, estudos e tempo para as relações pessoais.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!--COMO APURAMOS -->
+    <section class="band" aria-labelledby="metodo-titulo">
+      <div class="container">
+        <h2 class="section-label" id="metodo-titulo">Como apuramos</h2>
+        <ol class="etapas">
+          <li>
+            <p class="kicker">Etapa 1</p>
+            <h3>Pesquisa de campo</h3>
+            <p>Questionário online aplicado a universitários e ex-universitários, com perguntas curtas e objetivas.</p>
+          </li>
+          <li>
+            <p class="kicker">Etapa 2</p>
+            <h3>Análise de especialistas</h3>
+            <p>Profissionais de cada área comentam criticamente os resultados encontrados.</p>
+          </li>
+          <li>
+            <p class="kicker">Etapa 3</p>
+            <h3>Contexto e recomendações</h3>
+            <p>Cruzamento com pesquisas de outros países e orientações gerais de hábitos saudáveis.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!--Parte dos Escpecialistas-->
+    <section class="band" id="especialistas" aria-labelledby="esp-titulo">
+      <div class="container">
+        <p class="section-label">Opinião dos especialistas</p>
+        <div class="section-head">
+          <h2 class="section-title" id="esp-titulo">O que dizem os profissionais sobre os resultados</h2>
+          <p class="section-deck">Cada eixo da pesquisa é comentado por um especialista da área, que interpreta os dados e traz uma visão crítica sobre a rotina dos universitários.</p>
+        </div>
+
+        <!--
+          COMO TROCAR A FOTO: apague a <div class="foto foto--placeholder"> e coloque no lugar:
+          <div class="foto"><img src="img/nome-da-foto.jpg" alt="Foto de Nome do Profissional"></div>
+        -->
+
+        <!-- Especialista 1 — Nutrição -->
+        <article class="especialista">
+          <figure class="especialista__foto">
+            <div class="foto"><img src="img/nome-da-foto.jpg"></div>
+            <figcaption>Foto: divulgação</figcaption>
+          </figure>
+          <div class="especialista__texto">
+            <p class="kicker">Nutrição</p>
+            <h3 class="especialista__nome">Nome do Profissional</h3>
+            <p class="especialista__cargo">Nutricionista · CRN 00000</p>
+            <blockquote class="destaque">“Espaço reservado para uma frase de destaque do nutricionista sobre os hábitos alimentares dos universitários.”</blockquote>
+            <p>Espaço reservado para a análise crítica do nutricionista sobre os hábitos alimentares identificados na pesquisa: frequência de refeições, qualidade da dieta e acompanhamento nutricional entre os universitários.</p>
+            <p>Aqui entram as observações sobre os principais desafios alimentares da rotina acadêmica e as orientações práticas que o profissional considera mais relevantes.</p>
+            <div class="contatos">
+              <span class="contatos__titulo">Contato</span>
+              <ul>
+                <li><a href="https://wa.me/5500000000000" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg>WhatsApp</a></li>
+                <li><a href="https://instagram.com/usuario" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-instagram"/></svg>@instagram</a></li>
+                <li><a href="mailto:email@exemplo.com"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-email"/></svg>email@exemplo.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Especialista 2 — Educação Física -->
+        <article class="especialista">
+          <figure class="especialista__foto">
+            <div class="foto"><img src="img/nome-da-foto.jpg"></div>
+            <figcaption>Foto: divulgação</figcaption>
+          </figure>
+          <div class="especialista__texto">
+            <p class="kicker">Educação física</p>
+            <h3 class="especialista__nome">Nome do Profissional</h3>
+            <p class="especialista__cargo">Educador(a) Físico(a) · CREF 000000</p>
+            <blockquote class="destaque">“Espaço reservado para uma frase de destaque do educador físico sobre movimento e rotina acadêmica.”</blockquote>
+            <p>Espaço reservado para a análise sobre a prática de atividade física, o sedentarismo e a relação entre movimento e a rotina de estudo e trabalho observadas nos resultados.</p>
+            <p>Aqui entram as considerações sobre como encaixar o exercício em uma agenda cheia e o que os dados revelam sobre esse equilíbrio.</p>
+            <div class="contatos">
+              <span class="contatos__titulo">Contato</span>
+              <ul>
+                <li><a href="https://wa.me/5500000000000" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg>WhatsApp</a></li>
+                <li><a href="https://instagram.com/usuario" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-instagram"/></svg>@instagram</a></li>
+                <li><a href="mailto:email@exemplo.com"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-email"/></svg>email@exemplo.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Especialista 3 — Saúde mental -->
+        <article class="especialista">
+          <figure class="especialista__foto">
+            <div class="foto"><img src="img/nome-da-foto.jpg"></div>
+            <figcaption>Foto: divulgação</figcaption>
+          </figure>
+          <div class="especialista__texto">
+            <p class="kicker">Saúde mental</p>
+            <h3 class="especialista__nome">Nome do Profissional</h3>
+            <p class="especialista__cargo">Psicólogo(a) · CRP 00/00000</p>
+            <blockquote class="destaque">“Espaço reservado para uma frase de destaque do profissional sobre sobrecarga e bem-estar emocional.”</blockquote>
+            <p>Espaço reservado para a análise sobre sobrecarga, estresse e o impacto da rotina universitária no bem-estar emocional dos participantes da pesquisa.</p>
+            <p>Aqui entram as reflexões sobre os desafios de conciliar trabalho, estudos e vida social, e caminhos possíveis de cuidado.</p>
+            <div class="contatos">
+              <span class="contatos__titulo">Contato</span>
+              <ul>
+                <li><a href="https://wa.me/5500000000000" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg>WhatsApp</a></li>
+                <li><a href="https://instagram.com/usuario" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-instagram"/></svg>@instagram</a></li>
+                <li><a href="mailto:email@exemplo.com"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-email"/></svg>email@exemplo.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PANORAMA (dados de outras pesquisas) -->
+    <section class="band band--alt" id="panorama" aria-labelledby="pan-titulo">
+      <div class="container">
+        <p class="section-label">Panorama</p>
+        <div class="section-head">
+          <h2 class="section-title" id="pan-titulo">O que dizem os números, no Brasil e no mundo</h2>
+          <p class="section-deck">Cruzamos as análises dos especialistas com pesquisas dos últimos cinco anos sobre a vida de universitários.</p>
+        </div>
+
+        <!-- Substitua os "00%" pelos dados reais e preencha a fonte de cada um -->
+        <div class="dados">
+          <article>
+            <p class="kicker">Brasil</p>
+            <p class="dados__numero">00%</p>
+            <p>Indicador sobre hábitos alimentares de universitários.</p>
+            <p class="dados__fonte">Fonte: instituição · ano (inserir)</p>
+          </article>
+          <article>
+            <p class="kicker">Internacional</p>
+            <p class="dados__numero">00%</p>
+            <p>Indicador sobre sedentarismo na vida acadêmica.</p>
+            <p class="dados__fonte">Fonte: instituição · ano (inserir)</p>
+          </article>
+          <article>
+            <p class="kicker">Global</p>
+            <p class="dados__numero">00%</p>
+            <p>Indicador sobre saúde mental de estudantes universitários.</p>
+            <p class="dados__fonte">Fonte: instituição · ano (inserir)</p>
+          </article>
+        </div>
+
+        <aside class="analise">
+          <p class="kicker">Análise</p>
+          <p>Aqui comparamos o que os especialistas observaram nos resultados do questionário com o que as pesquisas nacionais e internacionais apontam, formando um retrato mais amplo do cenário universitário.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- RECOMENDAÇÕES -->
+    <section class="band" id="recomendacoes" aria-labelledby="rec-titulo">
+      <div class="container">
+        <p class="section-label">Guia rápido</p>
+        <div class="section-head">
+          <h2 class="section-title" id="rec-titulo">Seis hábitos básicos para a rotina acadêmica</h2>
+        </div>
+
+        <!-- A numeração (1., 2., 3....) é feita automaticamente pelo CSS, com counter -->
+        <ol class="habitos">
+          <li>
+            <h3>Durma com regularidade</h3>
+            <p>Manter horários consistentes de sono ajuda na concentração e no humor.</p>
+          </li>
+          <li>
+            <h3>Faça refeições regulares</h3>
+            <p>Evite longos períodos em jejum e priorize comida de verdade no dia a dia.</p>
+          </li>
+          <li>
+            <h3>Mova-se todos os dias</h3>
+            <p>Atividades simples, como caminhar, já fazem diferença na rotina.</p>
+          </li>
+          <li>
+            <h3>Cuide da saúde mental</h3>
+            <p>Faça pausas, reconheça o cansaço e busque apoio quando precisar.</p>
+          </li>
+          <li>
+            <h3>Hidrate-se</h3>
+            <p>Mantenha uma garrafa de água por perto durante as aulas e o trabalho.</p>
+          </li>
+          <li>
+            <h3>Preserve a vida social</h3>
+            <p>Reserve tempo para família, amigos e momentos de lazer.</p>
+          </li>
+        </ol>
+
+        <aside class="nota" aria-label="Nota ao leitor">
+          <p class="kicker">Nota ao leitor</p>
+          <p>Este site é um projeto acadêmico de caráter exclusivamente informativo. Nenhum conteúdo aqui substitui a recomendação, o diagnóstico ou a orientação de um profissional de saúde. Em caso de dúvidas, procure atendimento profissional.</p>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <p class="footer__brand">A Rotina Universitária</p>
+          <p class="footer__sub">Projeto de extensão · Engenharia de Software · Unipar</p>
+        </div>
+        <nav aria-label="Rodapé">
+          <ul class="footer__nav">
+            <li><a href="#pesquisa">Pesquisa</a></li>
+            <li><a href="#especialistas">Especialistas</a></li>
+            <li><a href="#panorama">Panorama</a></li>
+            <li><a href="#recomendacoes">Recomendações</a></li>
+            <li><a href="#participe">Participe</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer__copy">© 2026 · Projeto acadêmico de caráter informativo, sem fins comerciais. 
+        <br><B>ATENÇÃO Este site é um projeto acadêmico de caráter exclusivamente informativo e não
+         substitui, de forma alguma, as orientações individuais de um médico ou profissional
+          de saúde. Consulte sempre fontes confiáveis, revise as informações e fique atento.</B></p>
+    </div>
+  </footer>
+
+</body>
+</html>
