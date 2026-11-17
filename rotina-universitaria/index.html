@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <!-- O viewport é o que faz o site se adaptar ao celular. Sem ele, o navegador mobile "encolhe" a página desktop. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Rotina Universitária — Pesquisa de campo sobre hábitos, saúde e vida acadêmica</title>
+  <meta name="description" content="Reportagem especial com pesquisa de campo sobre a rotina, a alimentação, a atividade física, a saúde mental e a vida social de universitários, com análise de um nutricionista e de um educador físico.">
+
+  <!-- Fontes: Playfair Display (títulos e textos) e Inter (rótulos pequenos). -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ícones: ficam definidos uma única vez aqui e são reaproveitados com a tag <use> -->
+  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20l1.2-5A8.4 8.4 0 1 1 21 11.5z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></symbol>
+  </svg>
+
+  <!-- ============ FAIXA SUPERIOR ============ -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span>Edição especial · Projeto de extensão</span>
+      <span>Unipar · Novembro de 2026</span>
+    </div>
+  </div>
+
+  <!-- ============ MASTHEAD (o "cabeçalho de jornal") ============ -->
+  <header class="masthead">
+    <div class="container">
+      <div class="rule-double" aria-hidden="true"></div>
+      <p class="masthead__title">A Rotina Universitária</p>
+      <p class="masthead__tagline">Pesquisa de campo sobre hábitos, saúde e vida acadêmica</p>
+
+      <nav class="nav" aria-label="Seções da página">
+        <ul class="nav__list">
+          <li><a href="#pesquisa">Pesquisa</a></li>
+          <li><a href="#especialistas">Especialistas</a></li>
+          <li><a href="#panorama">Panorama</a></li>
+          <li><a href="#recomendacoes">Recomendações</a></li>
+          <li><a href="#participe">Participe</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ MANCHETE ============ -->
+    <section class="lead" id="pesquisa" aria-labelledby="manchete">
+      <div class="container lead__grid">
+
+        <article class="lead__main">
+          <p class="kicker">Reportagem especial</p>
+          <h1 class="lead__title" id="manchete">Entre aulas, trabalho e prazos, como vive o universitário?</h1>
+          <p class="lead__deck">Uma pesquisa de campo ouviu universitários e ex-universitários sobre alimentação, atividade física, saúde mental e vida social — e submeteu os resultados à análise de especialistas.</p>
+          <p class="byline">Projeto de extensão · Engenharia de Software, Unipar</p>
+
+          <!-- O texto flui em duas colunas graças ao CSS "column-count" -->
+          <div class="lead__body">
+            <p>Estudar, trabalhar e manter a vida pessoal em dia faz parte do cotidiano de muitos acadêmicos. Essa rotina intensa costuma favorecer hábitos práticos, mas nem sempre saudáveis ou recomendáveis: refeições irregulares, pouco sono, sedentarismo e sobrecarga mental.</p>
+            <p>Por isso, um grupo de estudantes desenvolveu este projeto acadêmico: uma pesquisa de campo aplicada a universitários e ex-universitários, para compreender como estão a rotina e os hábitos da vida acadêmica.</p>
+            <p>Os resultados são analisados por um nutricionista e por um educador físico e colocados em contexto com pesquisas feitas no Brasil e em outros países, compondo um panorama do cenário universitário.</p>
+            <blockquote class="pull">“Rotina intensa, hábitos práticos  mas nem sempre saudáveis.”</blockquote>
+          </div>
+        </article>
+
+        <aside class="lead__side" aria-label="Participe da pesquisa">
+          <div class="participe" id="participe">
+            <p class="kicker">Participe</p>
+            <h2 class="participe__title">Responda ao questionário</h2>
+            <p class="participe__text">Leva poucos minutos. As respostas são anônimas e alimentam esta reportagem. Para universitários e ex-universitários.</p>
+            <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfPuXnnag1WBMnQj27vCgwtDP3L5r70aJl-CUI6578sW5Eajw/viewform" target="_blank" rel="noopener">Acessar o formulário →</a>
+          </div>
+
+          <div class="numeros">
+            <p class="kicker kicker--ink">Em números</p>
+            <dl>
+              <div><dt>4</dt><dd>eixos de análise</dd></div>
+              <div><dt>2</dt><dd>especialistas convidados</dd></div>
+              <div><dt>4</dt><dd>pesquisas nacionais e internacionais como contexto</dd></div>
+            </dl>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- ============ NESTA REPORTAGEM (os 4 eixos) ============ -->
+    <section class="band band--alt" aria-labelledby="eixos-titulo">
+      <div class="container">
+        <h2 class="section-label" id="eixos-titulo">Nesta reportagem</h2>
+        <ol class="eixos">
+          <li>
+            <span class="eixos__num" aria-hidden="true">01</span>
+            <h3>Alimentação</h3>
+            <p>Frequência das refeições, qualidade da dieta e acompanhamento nutricional.</p>
+          </li>
+          <li>
+            <span class="eixos__num" aria-hidden="true">02</span>
+            <h3>Saúde física</h3>
+            <p>Atividade física, horas de sono e acompanhamento médico.</p>
+          </li>
+          <li>
+            <span class="eixos__num" aria-hidden="true">03</span>
+            <h3>Saúde mental</h3>
+            <p>Sobrecarga, estresse e o impacto da rotina no bem-estar emocional.</p>
+          </li>
+          <li>
+            <span class="eixos__num" aria-hidden="true">04</span>
+            <h3>Vida social</h3>
+            <p>Equilíbrio entre trabalho, estudos e tempo para as relações pessoais.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ COMO APURAMOS ============ -->
+    <section class="band" aria-labelledby="metodo-titulo">
+      <div class="container">
+        <h2 class="section-label" id="metodo-titulo">Como apuramos</h2>
+        <ol class="etapas">
+          <li>
+            <p class="kicker">Etapa 1</p>
+            <h3>Pesquisa de campo</h3>
+            <p>Questionário online aplicado a universitários e ex-universitários, com perguntas curtas e objetivas.</p>
+          </li>
+          <li>
+            <p class="kicker">Etapa 2</p>
+            <h3>Análise de especialistas</h3>
+            <p>Um nutricionista e um educador físico comentam criticamente os resultados encontrados.</p>
+          </li>
+          <li>
+            <p class="kicker">Etapa 3</p>
+            <h3>Contexto e recomendações</h3>
+            <p>Pesquisas de outras regiões e países dão contexto ao tema, e orientações gerais de hábitos saudáveis fecham a reportagem.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ ESPECIALISTAS ============ -->
+    <section class="band" id="especialistas" aria-labelledby="esp-titulo">
+      <div class="container">
+        <p class="section-label">Opinião dos especialistas</p>
+        <div class="section-head">
+          <h2 class="section-title" id="esp-titulo">O que dizem os profissionais sobre os resultados</h2>
+          <p class="section-deck">Um nutricionista e um educador físico interpretam os dados e trazem uma visão crítica sobre a rotina dos universitários.</p>
+        </div>
+
+        <!-- Especialista 1 — Nutrição -->
+        <article class="especialista">
+          <figure class="especialista__foto">
+            <div class="foto"><img src="img/maycon-souza.jpg" alt="Maycon Souza, nutricionista" width="640" height="640" loading="lazy"></div>
+            <figcaption>Maycon Souza, nutricionista</figcaption>
+          </figure>
+          <div class="especialista__texto">
+            <p class="kicker">Nutrição</p>
+            <h3 class="especialista__nome">Maycon Souza</h3>
+            <p class="especialista__cargo">Nutricionista</p>
+
+            <blockquote class="destaque">“Pequenas mudanças graduais, com orientação de um profissional de saúde quando possível, costumam ser mais sustentáveis do que mudanças bruscas.”</blockquote>
+
+            <div class="artigo">
+              <h4 class="artigo__titulo">Vida universitária: análise das respostas do formulário</h4>
+              <p class="artigo__base">Projeto da faculdade. Base: 42 respostas, das quais 28 de universitários atuais.</p>
+              <p>Esta análise descreve a rotina, a alimentação e o bem-estar de 28 universitários atuais que responderam ao formulário. Trata-se de um retrato do grupo, sem avaliar pessoas individualmente e sem diagnóstico de qualquer natureza. O que mais se destaca é a rotina intensa: 26 dos 28 (92,9%) conciliam o estudo com algum tipo de trabalho, e 23 (82,1%) dizem se sentir sobrecarregados sempre ou às vezes.</p>
+              <p>Em relação aos hábitos, o grupo apresenta pontos positivos e pontos que podem ser ajustados aos poucos. Metade bebe mais de 1,5 litro de água por dia, quase metade faz de 3 a 4 refeições diárias e 11 pessoas (47,8%) comem frutas todos os dias. Ao mesmo tempo, há espaço para ampliar a variedade de refeições, de frutas e de atividade física, e para cuidar do sono. Pequenas mudanças graduais, com orientação de um profissional de saúde quando possível, costumam ser mais sustentáveis do que mudanças bruscas.</p>
+
+              <!-- Análise completa: abre e fecha sem JavaScript -->
+              <details class="passos">
+                <summary>Ver a análise completa, com 19 gráficos</summary>
+                <div class="relatorio">
+                  <section class="relatorio__secao">
+                  <h5>Amostra e critérios</h5>
+                  <p>O formulário recebeu 42 respostas. Foram consideradas relevantes as 28 respostas de quem é universitário atualmente. As outras 14 (quem já foi universitário nos últimos cinco anos ou não é) aparecem apenas na comparação final. Os percentuais usam como base as respostas válidas de cada pergunta, indicadas por n em cada gráfico. Respostas em branco, "não sei informar" e "varia muito" ficaram fora da contagem da pergunta correspondente.</p>
+                  <p>Os valores de referência citados ao longo do texto são orientações gerais para adultos saudáveis, usadas apenas para contextualizar os resultados. Cada pessoa tem necessidades próprias, e a avaliação individual cabe a um nutricionista ou a outro profissional de saúde.</p>
+                  </section>
+                  <section class="relatorio__secao">
+                  <h5>Perfil do grupo</h5>
+                  <p>Mais da metade do grupo (15 pessoas, 53,6%) tem até 18 anos. As faixas de 19 a 22 anos (6 pessoas, 21,4%), 27 anos ou mais (4 pessoas, 14,3%) e 23 a 26 anos (3 pessoas, 10,7%) são menores, e por isso as comparações entre idades devem ser lidas com cautela.</p>
+                  <figure>
+                    <img src="img/grafico-01.png" alt="Gráfico 1. Faixa etária dos universitários atuais." width="704" height="363" loading="lazy">
+                    <figcaption>Gráfico 1. Faixa etária dos universitários atuais.</figcaption>
+                  </figure>
+                  <p>Quase todos trabalham: 20 (71,4%) em regime formal de segunda a sexta, 6 (21,4%) em outro formato, como meio período, informal ou freelancer, e 2 (7,1%) não trabalham. Essa combinação de estudo e trabalho influencia o tempo disponível para cozinhar, fazer pausas para comer e praticar atividade física.</p>
+                  <figure>
+                    <img src="img/grafico-02.png" alt="Gráfico 2. Trabalho formal entre os universitários atuais." width="704" height="363" loading="lazy">
+                    <figcaption>Gráfico 2. Trabalho formal entre os universitários atuais.</figcaption>
+                  </figure>
+                  </section>
+                  <section class="relatorio__secao">
+                  <h5>Alimentação</h5>
+                  <h6>Refeições</h6>
+                  <p>As refeições diárias se dividem quase ao meio: 13 pessoas (46,4%) fazem de 1 a 2 refeições por dia e 14 (50,0%) fazem de 3 a 4. Uma pessoa faz 5 ou mais.</p>
+                  <figure>
+                    <img src="img/grafico-03.png" alt="Gráfico 3. Refeições por dia." width="704" height="363" loading="lazy">
+                    <figcaption>Gráfico 3. Refeições por dia.</figcaption>
+                  </figure>
+                  <p>Em geral, a orientação nutricional é distribuir a alimentação em refeições regulares ao longo do dia, o que ajuda a manter a energia e a concentração nos estudos. Quem tem pouco tempo pode se organizar com lanches simples e práticos entre as refeições principais, como frutas, iogurte, castanhas ou sanduíches com pão integral.</p>
+                  <h6>Alimentos ultraprocessados</h6>
+                  <p>Dos 24 que responderam, 4 (16,7%) dizem não consumir ultraprocessados, 15 (62,5%) consomem de 1 a 4 vezes por semana, 1 (4,2%) consome de 5 a 6 vezes e 4 (16,7%) consomem todos os dias.</p>
+                  <figure>
+                    <img src="img/grafico-04.png" alt="Gráfico 4. Frequência semanal de ultraprocessados." width="704" height="363" loading="lazy">
+                    <figcaption>Gráfico 4. Frequência semanal de ultraprocessados.</figcaption>
+                  </figure>
+                  <p>Esses alimentos fazem parte da rotina de muita gente, sobretudo em dias corridos, e podem aparecer de vez em quando sem problema. A recomendação geral é dar preferência a alimentos in natura ou minimamente processados no dia a dia e reduzir os ultraprocessados de forma gradual, sem proibições, que costumam ser difíceis de manter.</p>
+                  <h6>Água e frutas</h6>
+                  <p>Na água, 11 de 22 (50,0%) bebem mais de 1,5 litro por dia, 4 (18,2%) bebem de 1 a 1,5 litro, 5 (22,7%) bebem de 500 ml a 1 litro e 2 (9,1%) bebem menos de 500 ml.</p>
+                  <figure>
+                    <img src="img/grafico-05.png" alt="Gráfico 5. Consumo de água por dia." width="704" height="363" loading="lazy">
+                    <figcaption>Gráfico 5. Consumo de água por dia.</figcaption>
+                  </figure>
+                  <p>A necessidade de água varia com o peso, o clima e a atividade física. Manter uma garrafa por perto e beber ao longo do dia é uma forma simples de se hidratar, e chás sem açúcar e alimentos ricos em água, como frutas e verduras, também ajudam.</p>
+                  <p>Entre os 23 que responderam sobre frutas, 11 (47,8%) comem diariamente e 12 (52,2%) comem raramente ou não comem. Entre os 15 que informaram a quantidade, 7 (46,7%) comem 1 porção por dia, 6 (40,0%) comem 2 porções e 2 (13,3%) comem 3 ou mais.</p>
+                  <figure>
+                    <img src="img/grafico-06.png" alt="Gráfico 6. Consumo diário de frutas." width="704" height="363" loading="lazy">
+                    <figcaption>Gráfico 6. Consumo diário de frutas.</figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/grafico-07.png" alt="Gráfico 7. Porções de fruta por dia." width="704" height="363" loading="lazy">
+                    <figcaption>Gráfico 7. Porções de fruta por dia.</figcaption>
+                  </figure>
+                  <p>As diretrizes alimentares costumam sugerir frutas, legumes e verduras ao longo do dia, em variedade e conforme a rotina e o orçamento de cada um. Frutas da estação costumam ser mais acessíveis, e uma fruta junto ao café da manhã ou ao lanche já contribui.</p>
+                  <h6>Cantina</h6>
+                  <p>Dos 23 que responderam, 4 (17,4%) não consomem produtos da cantina, 5 (21,7%) consomem 1 item, 7 (30,4%) consomem de 2 a 3 itens e 7 (30,4%) consomem 4 itens ou mais, entre salgados, doces, bolachas, refrigerantes, energéticos e café.</p>
+                  <figure>
+                    <img src="img/grafico-08.png" alt="Gráfico 8. Número de itens consumidos na cantina." width="704" height="363" loading="lazy">
+                    <figcaption>Gráfico 8. Número de itens consumidos na cantina.</figcaption>
+                  </figure>
+                  <p>A cantina é prática para quem tem a rotina cheia. Variar as escolhas, incluindo opções como frutas, sanduíches naturais, iogurtes e água, e levar um lanche de casa em alguns dias são formas de equilibrar sem abrir mão da praticidade.</p>
+                  </section>
+                  <section class="relatorio__secao">
+                  <h5>Saúde e atividade física</h5>
+                  <h6>Acompanhamento de saúde</h6>
+                  <p>Entre os 28, 11 (39,3%) nunca fizeram acompanhamento médico ou nutricional, 12 (42,9%) já fizeram sem manter a recorrência e 5 (17,9%) acompanham regularmente.</p>
+                  <figure>
+                    <img src="img/grafico-09.png" alt="Gráfico 9. Acompanhamento médico ou nutricional." width="704" height="363" loading="lazy">
+                    <figcaption>Gráfico 9. Acompanhamento médico ou nutricional.</figcaption>
+                  </figure>
+                  <p>Consultas de rotina permitem acompanhar a saúde de forma preventiva e receber orientações adaptadas a cada pessoa. Para estudantes, vale lembrar que há atendimento nutricional e médico em serviços públicos e, em algumas instituições, em clínicas-escola.</p>
+                  <h6>Atividade física</h6>
+                  <p>Entre 23 respostas válidas, 7 pessoas (30,4%) não praticam atividade física, 8 (34,8%) praticam de 1 a 2 vezes por semana e 8 (34,8%) praticam 3 vezes por semana ou mais. A duração informada se concentra entre 30 minutos e 2 horas (17 de 26 respostas, 65,4%), e 6 pessoas (23,1%) fazem sessões de menos de 30 minutos. Algumas respostas de duração vêm de pessoas que marcaram não praticar atividade física, então esse gráfico deve ser lido com cautela.</p>
+                  <figure>
+                    <img src="img/grafico-10.png" alt="Gráfico 10. Atividade física por semana." width="704" height="363" loading="lazy">
+                    <figcaption>Gráfico 10. Atividade física por semana.</figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/grafico-11.png" alt="Gráfico 11. Duração média da atividade física." width="704" height="363" loading="lazy">
+                    <figcaption>Gráfico 11. Duração média da atividade física.</figcaption>
+                  </figure>
+                  <p>Como referência geral, a Organização Mundial da Saúde sugere para adultos cerca de 150 minutos de atividade moderada por semana. Isso pode ser alcançado aos poucos, com caminhadas, uso de escadas e sessões curtas de 10 a 20 minutos distribuídas ao longo da semana. Quem está começando deve ir no seu ritmo e, se possível, contar com a orientação de um profissional de educação física.</p>
+                  </section>
+                  <section class="relatorio__secao">
+                  <h5>Sono e tempo livre</h5>
+                  <p>Entre os 28, 14 (50,0%) dormem até 6 horas por noite (5 com menos de 5 horas, 5 com 4 a 6 horas e 4 com 5 a 6 horas), 13 (46,4%) dormem de 6 a 8 horas e 1 dorme mais de 8 horas. As faixas de 4 a 6 e de 5 a 6 horas se sobrepõem no formulário, o que limita a precisão dessa leitura.</p>
+                  <figure>
+                    <img src="img/grafico-12.png" alt="Gráfico 12. Horas de sono por noite." width="704" height="363" loading="lazy">
+                    <figcaption>Gráfico 12. Horas de sono por noite.</figcaption>
+                  </figure>
+                  <p>Em geral, adultos se beneficiam de 7 a 9 horas de sono, e o sono tem relação com o apetite, a energia e o humor. Horários regulares, menos telas antes de dormir e evitar cafeína no fim do dia ajudam, embora nem sempre seja possível com uma rotina de trabalho e estudo.</p>
+                  <p>Sobre o tempo livre, 14 dos 28 respondentes disseram que ele varia muito de um dia para o outro. Entre os 14 que deram um valor, 10 (71,4%) têm no máximo 2 horas livres por dia.</p>
+                  <figure>
+                    <img src="img/grafico-13.png" alt="Gráfico 13. Tempo livre por dia (exclui quem respondeu que varia)." width="704" height="363" loading="lazy">
+                    <figcaption>Gráfico 13. Tempo livre por dia (exclui quem respondeu que varia).</figcaption>
+                  </figure>
+                  <p>Reservar pequenos momentos de descanso e de lazer no dia, mesmo curtos, faz parte do cuidado com a saúde.</p>
+                  </section>
+                  <section class="relatorio__secao">
+                  <h5>Rotina e bem-estar emocional</h5>
+                  <p>Dos 28 universitários atuais, 18 (64,3%) se consideram sobrecarregados, 5 (17,9%) se sentem assim às vezes e 5 (17,9%) não se sentem.</p>
+                  <figure>
+                    <img src="img/grafico-14.png" alt="Gráfico 14. Percepção de sobrecarga." width="704" height="363" loading="lazy">
+                    <figcaption>Gráfico 14. Percepção de sobrecarga.</figcaption>
+                  </figure>
+                  <p>Os desafios mais citados para conciliar trabalho, estudo e vida social são o cansaço (12 pessoas, 42,9%) e a falta de tempo (10 pessoas, 35,7%). Duas pessoas (7,1%) marcaram todas as opções, uma (3,6%) apontou a pressão financeira e três (10,7%) deram outras respostas.</p>
+                  <figure>
+                    <img src="img/grafico-15.png" alt="Gráfico 15. Principais desafios para conciliar trabalho, estudos e vida social." width="704" height="363" loading="lazy">
+                    <figcaption>Gráfico 15. Principais desafios para conciliar trabalho, estudos e vida social.</figcaption>
+                  </figure>
+                  <p>Sobre o estado emocional, 14 de 27 (51,9%) dizem que a rotina interfere bastante, 9 (33,3%) dizem que interfere um pouco e 4 (14,8%) dizem que não interfere.</p>
+                  <figure>
+                    <img src="img/grafico-16.png" alt="Gráfico 16. A rotina interfere no estado mental ou emocional?" width="704" height="363" loading="lazy">
+                    <figcaption>Gráfico 16. A rotina interfere no estado mental ou emocional?</figcaption>
+                  </figure>
+                  <p>Entre os 24 que descreveram a forma dessa interferência, a ansiedade foi a mais citada (7 respostas, 29,2%). Estresse, cansaço excessivo e dificuldade de concentração aparecem com 5 respostas cada (20,8%).</p>
+                  <figure>
+                    <img src="img/grafico-17.png" alt="Gráfico 17. Forma como a rotina interfere no estado mental." width="704" height="363" loading="lazy">
+                    <figcaption>Gráfico 17. Forma como a rotina interfere no estado mental.</figcaption>
+                  </figure>
+                  <p>Apenas 6 pessoas responderam por que não se exercitam ou não se alimentam como gostariam: 4 citaram falta de motivação ou interesse e 2 deram outros motivos. Como são poucas respostas, o resultado serve só como indício.</p>
+                  <figure>
+                    <img src="img/grafico-18.png" alt="Gráfico 18. Motivo para não se exercitar ou alimentar bem." width="704" height="363" loading="lazy">
+                    <figcaption>Gráfico 18. Motivo para não se exercitar ou alimentar bem.</figcaption>
+                  </figure>
+                  <p>Sentir cansaço e ansiedade em períodos de muita demanda é comum e não significa um problema de saúde por si só. A alimentação, o sono e o movimento contribuem para o bem-estar, mas não substituem o apoio profissional. Se esses sentimentos forem frequentes ou atrapalharem o dia a dia, conversar com um profissional de saúde ou com o serviço de apoio da instituição pode ajudar.</p>
+                  </section>
+                  <section class="relatorio__secao">
+                  <h5>Cruzamentos entre respostas</h5>
+                  <p>Os cruzamentos abaixo são contagens simples. Mostram associações observadas neste grupo e não indicam que uma resposta cause a outra.</p>
+                  <ul>
+                    <li>Sono e sobrecarga: as 5 pessoas que não se sentem sobrecarregadas dormem de 6 a 8 horas. Entre as 18 que se sentem sobrecarregadas, 13 (72,2%) dormem até 6 horas.</li>
+                    <li>Sono e bem-estar emocional: das 13 pessoas que dormem até 6 horas, 10 (76,9%) dizem que a rotina interfere bastante no estado emocional. Entre as 13 que dormem de 6 a 8 horas, são 3 (23,1%).</li>
+                    <li>Trabalho e sobrecarga: 15 das 20 pessoas com trabalho formal (75,0%) se dizem sobrecarregadas, contra 3 das 8 que trabalham em outro formato ou não trabalham (37,5%).</li>
+                    <li>Idade e sobrecarga: 11 das 15 pessoas de até 18 anos (73,3%) se dizem sobrecarregadas, contra 2 das 6 de 19 a 22 anos (33,3%). As demais faixas têm de 3 a 4 pessoas e não permitem comparação segura.</li>
+                    <li>Atividade física e sobrecarga: 6 das 7 pessoas que não praticam atividade física (85,7%) se dizem sobrecarregadas, mas entre quem pratica 3 vezes por semana ou mais a proporção também é alta (5 de 8). Os dados não mostram uma relação clara.</li>
+                  </ul>
+                  </section>
+                  <section class="relatorio__secao">
+                  <h5>Universitários atuais e demais respondentes</h5>
+                  <p>As 14 respostas de quem não é universitário atual servem de referência. Entre elas, 6 de 14 (42,9%) se dizem sobrecarregadas, contra 64,3% dos universitários atuais. A resposta "bastante" para a interferência da rotina aparece em 5 de 13 (38,5%), contra 51,9%. Dormir até 6 horas é a realidade de 3 de 14 (21,4%), contra 50,0%, e 1 de 13 (7,7%) não pratica atividade física, contra 30,4%. O grupo de comparação é pequeno e inclui pessoas que já passaram pela faculdade, então a diferença é uma tendência a ser verificada e não um resultado firme.</p>
+                  <figure>
+                    <img src="img/grafico-19.png" alt="Gráfico 19. Comparação entre universitários atuais e demais respondentes." width="726" height="374" loading="lazy">
+                    <figcaption>Gráfico 19. Comparação entre universitários atuais e demais respondentes.</figcaption>
+                  </figure>
+                  </section>
+                </div>
+              </details>
+
+              <section class="relatorio__secao">
+              <h5>Considerações finais</h5>
+              <ul>
+                <li>A rotina de quem estuda e trabalha é intensa, e a sensação de sobrecarga é comum no grupo. Reconhecer isso é o primeiro passo para organizar o tempo e pedir apoio quando necessário.</li>
+                <li>Há hábitos positivos no grupo, como o consumo de água e a presença de frutas na rotina de parte dos respondentes, que podem servir de base para novas melhorias.</li>
+                <li>Ajustes pequenos e graduais costumam funcionar melhor: manter refeições regulares, incluir uma fruta a mais por dia, variar as escolhas na cantina, se mexer um pouco mais e proteger o horário de sono.</li>
+                <li>O acompanhamento com nutricionista e outros profissionais de saúde permite orientações adequadas a cada pessoa. Ações de apoio na instituição, como rodas de conversa e ambientes de descanso, também podem ajudar.</li>
+              </ul>
+              </section>
+              <section class="relatorio__secao">
+              <h5>Limitações</h5>
+              <ul>
+                <li>A amostra tem 28 universitários atuais, 15 deles com até 18 anos, e foi obtida sem sorteio. Os resultados descrevem este grupo.</li>
+                <li>As respostas são autodeclaradas, e várias perguntas têm poucas respostas válidas (frutas, água, tempo livre e motivos).</li>
+                <li>Na codificação, a faixa de água "mais de 1,5 L até 2 L" foi agrupada com "mais de 2 L". As faixas de sono se sobrepõem no formulário.</li>
+                <li>Três colunas sem cabeçalho na planilha original foram deixadas de fora.</li>
+                <li>Esta análise é descritiva e não substitui a avaliação individual por nutricionista ou outro profissional de saúde.</li>
+              </ul>
+              </section>
+            </div>
+
+            <div class="contatos">
+              <span class="contatos__titulo">Contato</span>
+              <ul>
+                <!-- WhatsApp: 55 + DDD + número. Celular no Brasil tem 9 dígitos depois do DDD; confira se está certo. -->
+                <li><a href="https://wa.me/554598247795" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg>WhatsApp</a></li>
+                <li><a href="https://www.instagram.com/maycon_lunkes.nutri" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-instagram"/></svg>@maycon_lunkes.nutri</a></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Especialista 2 — Educação Física -->
+        <article class="especialista">
+          <figure class="especialista__foto">
+            <div class="foto"><img src="img/thiago-bertol.jpg" alt="Thiago Bertol, educador físico" width="640" height="640" loading="lazy"></div>
+            <figcaption>Thiago Bertol, educador físico</figcaption>
+          </figure>
+          <div class="especialista__texto">
+            <p class="kicker">Educação física</p>
+            <h3 class="especialista__nome">Thiago Bertol</h3>
+            <p class="especialista__cargo">Educador físico</p>
+            <blockquote class="destaque">“O segredo está em começar de forma gradual, respeitando as limitações individuais e transformando o movimento em parte da rotina diária.”</blockquote>
+
+            <div class="artigo">
+              <h4 class="artigo__titulo">Cuidados físicos para estudantes que trabalham e mantêm uma rotina sedentária</h4>
+              <p>A combinação entre trabalho, estudos e longos períodos sentados é uma realidade para muitos estudantes. Essa rotina pode favorecer dores musculares, fadiga, aumento do estresse, redução da disposição e maior risco para doenças crônicas. A boa notícia é que pequenas mudanças graduais podem trazer benefícios significativos para a saúde física e mental.</p>
+
+              <!-- <details> + <summary> cria um bloco que abre e fecha sozinho, sem JavaScript -->
+              <details class="passos">
+                <summary>Ver os 10 passos</summary>
+                <ol>
+                  <li>
+                    <strong>Fazer uma autoavaliação</strong>
+                    <ul>
+                      <li>Há quanto tempo estou sedentário?</li>
+                      <li>Possuo alguma limitação física ou condição de saúde?</li>
+                      <li>Quanto tempo consigo dedicar semanalmente às atividades?</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Começar com metas realistas</strong>
+                    <ul>
+                      <li>Semana 1 e 2: 15 a 20 minutos de caminhada, 3 vezes por semana.</li>
+                      <li>Semana 3 e 4: 25 a 30 minutos, 4 vezes por semana.</li>
+                      <li>A partir da semana 5: progressão gradual até atingir as recomendações semanais.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Aproveitar os deslocamentos diários</strong>
+                    <ul>
+                      <li>Utilizar escadas em vez do elevador.</li>
+                      <li>Caminhar pequenos trajetos.</li>
+                      <li>Estacionar mais longe do destino.</li>
+                      <li>Descer alguns pontos antes do transporte habitual.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Fazer pausas ativas durante os estudos</strong>
+                    <ul>
+                      <li>Levantar a cada 50 ou 60 minutos.</li>
+                      <li>Caminhar por 2 a 5 minutos.</li>
+                      <li>Alongar pescoço, ombros, coluna e pernas.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Incluir exercícios de fortalecimento muscular</strong>
+                    <ul>
+                      <li>Agachamentos.</li>
+                      <li>Flexões adaptadas.</li>
+                      <li>Prancha abdominal.</li>
+                      <li>Exercícios com elásticos.</li>
+                      <li>Musculação.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Priorizar alongamento e mobilidade</strong>
+                    <ul>
+                      <li>5 a 10 minutos de alongamento diário.</li>
+                      <li>Exercícios de mobilidade articular.</li>
+                      <li>Yoga ou pilates como complemento.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Cuidar da hidratação</strong>
+                    <ul>
+                      <li>Manter uma garrafa de água por perto.</li>
+                      <li>Beber água regularmente ao longo do dia.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Melhorar a qualidade do sono</strong>
+                    <ul>
+                      <li>Manter horários regulares para dormir.</li>
+                      <li>Buscar entre 7 e 9 horas de sono por noite.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Escolher atividades prazerosas</strong>
+                    <ul>
+                      <li>Caminhada, corrida, dança, musculação, ciclismo, natação ou esportes recreativos.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Monitorar a evolução</strong>
+                    <ul>
+                      <li>Número de treinos por semana.</li>
+                      <li>Tempo de atividade física.</li>
+                      <li>Qualidade do sono.</li>
+                      <li>Redução de dores e desconfortos.</li>
+                    </ul>
+                  </li>
+                </ol>
+              </details>
+
+              <p><strong>Considerações finais.</strong> Para estudantes que conciliam trabalho e estudo, a atividade física deve ser vista como uma ferramenta para melhorar a saúde, a produtividade e a qualidade de vida. O segredo está em começar de forma gradual, respeitando as limitações individuais e transformando o movimento em parte da rotina diária.</p>
+            </div>
+
+            <div class="contatos">
+              <span class="contatos__titulo">Contato</span>
+              <ul>
+                <!-- WhatsApp: 55 + DDD + número. Celular no Brasil tem 9 dígitos depois do DDD; confira se está certo. -->
+                <li><a href="https://wa.me/554599837185" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg>WhatsApp</a></li>
+                <li><a href="https://www.instagram.com/thiagoluizbertol1985" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-instagram"/></svg>@thiagoluizbertol1985</a></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PANORAMA (pesquisas de outras regiões e países) ============ -->
+    <section class="band band--alt" id="panorama" aria-labelledby="pan-titulo">
+      <div class="container">
+        <p class="section-label">Panorama</p>
+        <div class="section-head">
+          <h2 class="section-title" id="pan-titulo">A vida universitária no Brasil e no mundo</h2>
+          <p class="section-deck">Conciliar estudo, trabalho e cuidados pessoais é um desafio para muitos estudantes. Quatro pesquisas feitas em outras regiões do Brasil e em outros países ajudam a entender esse cenário.</p>
+        </div>
+
+        <div class="dados">
+          <article>
+            <p class="kicker">Brasil · 2018</p>
+            <p class="dados__numero">83,5%</p>
+            <h3 class="dados__titulo">relataram alguma dificuldade emocional que interferia na vida acadêmica</h3>
+            <ul class="dados__lista">
+              <li>Ansiedade: 63,6%</li>
+              <li>Desânimo ou desmotivação: 45,6%</li>
+              <li>Insônia ou alterações no sono: 32,7%</li>
+              <li>Média de 3,5 refeições por dia; 12,5% faziam apenas duas</li>
+              <li>29,9% trabalhavam; entre os que trabalhavam, mais da metade tinha dificuldade de conciliar trabalho e estudo</li>
+            </ul>
+            <p class="dados__fonte">Fonte: V Pesquisa Nacional de Perfil Socioeconômico e Cultural dos Graduandos (ANDIFES/FONAPRACE), com 424.128 questionários validados. Coleta em 2018, relatório publicado em 2019.</p>
+          </article>
+
+          <article>
+            <p class="kicker">Brasil · Calouros</p>
+            <p class="dados__numero">54,4%</p>
+            <h3 class="dados__titulo">apresentaram sintomas de depressão</h3>
+            <ul class="dados__lista">
+              <li>Entre quem tem hábitos menos saudáveis, o risco é três vezes maior</li>
+              <li>42,3% com estilo de vida positivo, 44% com perfil de risco e 13,7% com hábitos mistos</li>
+            </ul>
+            <p class="dados__fonte">Fonte: projeto Unilife-M, com 6.371 calouros de 12 universidades brasileiras, entre 16 e 35 anos. Divulgado pelo g1.</p>
+          </article>
+
+          <article>
+            <p class="kicker">Estados Unidos · 2023</p>
+            <p class="dados__numero">45,5%</p>
+            <h3 class="dados__titulo">dormiam menos de 7 horas por noite durante a semana</h3>
+            <ul class="dados__lista">
+              <li>75,6% consumiam ao menos uma bebida açucarada por dia, em média</li>
+              <li>70,3% cumpriam as recomendações de atividade aeróbica</li>
+              <li>40,7% cumpriam as de atividade aeróbica e de fortalecimento muscular</li>
+              <li>15,8% tomaram bebida energética em pelo menos 5 dos últimos 30 dias</li>
+            </ul>
+            <p class="dados__fonte">Fonte: American College Health Association, National College Health Assessment, com 18.755 estudantes de graduação. Coleta no outono de 2023, relatório de 2024.</p>
+          </article>
+
+          <article>
+            <p class="kicker">18 países · 2017 a 2023</p>
+            <p class="dados__numero">57,4%</p>
+            <h3 class="dados__titulo">tiveram rastreamento positivo para pelo menos um transtorno mental nos 12 meses anteriores</h3>
+            <ul class="dados__lista">
+              <li>65,2% tiveram rastreamento positivo para algum transtorno ao longo da vida</li>
+              <li>72.288 estudantes de primeiro ano, de 77 universidades</li>
+            </ul>
+            <p class="dados__fonte">Fonte: World Mental Health International College Student Initiative (WMH-ICS). Dados coletados entre 2017 e 2023, com publicação científica em 2025.</p>
+          </article>
+        </div>
+
+        <aside class="analise">
+          <p class="kicker">Como ler estes dados</p>
+          <p>São pesquisas externas, feitas com amostras, períodos e perguntas diferentes das nossas, e servem como contexto, não como comparação direta. Os resultados do nosso questionário representam apenas quem o respondeu, e não todos os universitários da cidade, do estado ou do país. “Rastreamento positivo” indica sinais que merecem avaliação profissional e não é um diagnóstico.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ RECOMENDAÇÕES ============ -->
+    <section class="band" id="recomendacoes" aria-labelledby="rec-titulo">
+      <div class="container">
+        <p class="section-label">Guia rápido</p>
+        <div class="section-head">
+          <h2 class="section-title" id="rec-titulo">Hábitos básicos para a rotina acadêmica</h2>
+          <p class="section-deck">Orientações gerais de alimentação e de movimento para quem divide o dia entre estudo e trabalho.</p>
+        </div>
+
+        <div class="guia">
+          <section class="guia__grupo" aria-labelledby="guia-alimentacao">
+            <h3 class="guia__titulo" id="guia-alimentacao">Alimentação</h3>
+            <p class="guia__fonte">Base: Guia Alimentar para a População Brasileira, do Ministério da Saúde.</p>
+            <!-- A numeração (1., 2., 3....) é feita automaticamente pelo CSS, com counter -->
+            <ol class="habitos">
+              <li>
+                <h4>Priorize alimentos naturais</h4>
+                <p>Inclua frutas, verduras e legumes. Dê preferência a arroz, feijão, ovos, carnes, leite e outros alimentos pouco processados, variando ao longo da semana.</p>
+              </li>
+              <li>
+                <h4>Reduza os ultraprocessados</h4>
+                <p>Evite o consumo frequente de salgadinhos, biscoitos recheados, macarrão instantâneo, refrigerantes e embutidos. Prefira refeições feitas com ingredientes frescos.</p>
+              </li>
+              <li>
+                <h4>Mantenha uma rotina alimentar</h4>
+                <p>Evite longos períodos sem comer, estabeleça horários e procure não comer com pressa ou distraído pelo celular.</p>
+              </li>
+              <li>
+                <h4>Beba água regularmente</h4>
+                <p>Mantenha uma garrafa por perto durante as aulas e o trabalho, e prefira água a refrigerantes e bebidas açucaradas.</p>
+              </li>
+              <li>
+                <h4>Planeje as refeições</h4>
+                <p>Prepare com antecedência quando possível e leve frutas ou lanches de casa. Ao comer fora, monte refeições variadas.</p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="guia__grupo" aria-labelledby="guia-movimento">
+            <h3 class="guia__titulo" id="guia-movimento">Movimento e rotina</h3>
+            <p class="guia__fonte">Base: orientações do educador físico Thiago Bertol.</p>
+            <ol class="habitos">
+              <li>
+                <h4>Comece com metas realistas</h4>
+                <p>Nas duas primeiras semanas, 15 a 20 minutos de caminhada, 3 vezes por semana. Depois, aumente aos poucos.</p>
+              </li>
+              <li>
+                <h4>Aproveite os deslocamentos</h4>
+                <p>Use as escadas em vez do elevador, caminhe pequenos trajetos e estacione mais longe do destino.</p>
+              </li>
+              <li>
+                <h4>Faça pausas ativas</h4>
+                <p>Levante a cada 50 ou 60 minutos de estudo, caminhe de 2 a 5 minutos e alongue pescoço, ombros, coluna e pernas.</p>
+              </li>
+              <li>
+                <h4>Fortaleça e alongue</h4>
+                <p>Inclua agachamentos, flexões adaptadas, prancha ou musculação, e reserve de 5 a 10 minutos diários para alongar.</p>
+              </li>
+              <li>
+                <h4>Cuide do sono</h4>
+                <p>Mantenha horários regulares e busque entre 7 e 9 horas de sono por noite.</p>
+              </li>
+            </ol>
+          </section>
+        </div>
+
+        <aside class="nota" aria-label="Nota ao leitor">
+          <p class="kicker">Nota ao leitor</p>
+          <p>Este site é um projeto acadêmico de caráter exclusivamente informativo e não substitui, de forma alguma, as orientações individuais de um médico ou profissional de saúde. Consulte sempre fontes confiáveis, revise as informações e fique atento.</p>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ RODAPÉ ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <p class="footer__brand">A Rotina Universitária</p>
+          <p class="footer__sub">Projeto de extensão · Engenharia de Software · Unipar</p>
+        </div>
+        <nav aria-label="Rodapé">
+          <ul class="footer__nav">
+            <li><a href="#pesquisa">Pesquisa</a></li>
+            <li><a href="#especialistas">Especialistas</a></li>
+            <li><a href="#panorama">Panorama</a></li>
+            <li><a href="#recomendacoes">Recomendações</a></li>
+            <li><a href="#participe">Participe</a></li>
+          </ul>
+        </nav>
+      </div>
+    <p class="footer__copy">© 2026 · Projeto acadêmico de caráter informativo, sem fins comerciais.<br>E ATENÇÃO, ESTAS INFORMAÇÕES NÃO SUBSTITUEM DE MANEIRA NENHUMA ORDEM DIRETAS OU ESPECIFICAS DE UM MEDICO, PROCURE SEMPRE FONTES CONFIAVEIS E SEMPRE CUIDE COM OQUE CONSOME E ABSORVE DA INTERNET, CUIDADO</p>
+    </div>
+  </footer>
+
+</body>
+</html>
